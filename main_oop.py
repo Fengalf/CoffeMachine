@@ -51,6 +51,7 @@ def coffe_machine():
         elif user_choice.lower() == "report":
             print("Here's a report of the current resources in the machine:")
             coffee_brewer.report()
+            money_handler.report()
 
         # giving the possibility to turn off the machine.
         elif user_choice.lower() == "off" or user_choice.lower() == "shutdown":
