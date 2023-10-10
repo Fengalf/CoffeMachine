@@ -43,8 +43,6 @@ def coffe_machine():
                 # letting the consumer pay the costs of the coffee
                 if money_handler.make_payment(chosen_drink.cost):
                     coffee_brewer.make_coffee(chosen_drink)
-                    print(
-                        f"\nHere's your '{chosen_drink.name}'. Enjoy!")
 
         # giving the possibility to check on the resources without having to open
         # the tanks.
