@@ -42,12 +42,9 @@ def coffe_machine():
                 print(f"This will cost ${chosen_drink.cost}")
                 # letting the consumer pay the costs of the coffee
                 if money_handler.make_payment(chosen_drink.cost):
-                    if chosen_drink.name[0].lower() in vowels:
-                        print(
-                            f"\nGreat, you'll get an '{chosen_drink.name}'. Enjoy!")
-                    else:
-                        print(
-                            f"\nGreat, you'll get a '{chosen_drink.name}'. Enjoy!")
+                    coffee_brewer.make_coffee(chosen_drink)
+                    print(
+                        f"\nHere's your '{chosen_drink.name}'. Enjoy!")
 
         # giving the possibility to check on the resources without having to open
         # the tanks.
