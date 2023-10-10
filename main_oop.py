@@ -12,9 +12,6 @@ def coffe_machine():
     # our power switch
     machine_is_on = True
 
-    # for the grammar bits
-    vowels = ["a", "e", "i", "o", "u"]
-
     # keeping the machine alive
     while machine_is_on:
         # preparing our items that are on the menu
